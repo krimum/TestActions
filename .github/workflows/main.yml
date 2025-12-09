@@ -1,8 +1,9 @@
 name: hello-world
-on: push
+on: schedule
+  - cron: '5 * * * *'
 jobs:
   kristina-job:
     runs-on: ubuntu-latest
     steps:
       - name: kristina-step
-        run: echo "Kristina Hello World!"
+        run: echo "Kristina 5 minutes Hello World!"

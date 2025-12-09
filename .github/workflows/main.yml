@@ -1,7 +1,7 @@
 name: hello-world
 on: 
   schedule:
-    - cron: '5 * * * *'
+    - cron: '15 13 * * *'
 jobs:
   kristina-job:
     runs-on: ubuntu-latest
